@@ -7,3 +7,7 @@ Keep watching me and advices are always welcome!
 - solved: A
 - over time: B
 - rating: 1403
+
+2. 20200307 20:35 codeforces Round #626
+- solved: A
+- over time: B D //examples were corretly output but time ....
