@@ -11,3 +11,9 @@ Keep watching me and advices are always welcome!
 2. 20200307 20:35 codeforces Round #626
 - solved: A
 - over time: B D //examples were corretly output but time ....
+
+3. 20200312 22:05 codeforces Round #627
+- solved: A
+- over time: B D
+* I monitored others code and I recognize that I always think in to difficult way. But! it means that I should study more and more
+Plan to study PS and Let's be a little bit better on next week! 
