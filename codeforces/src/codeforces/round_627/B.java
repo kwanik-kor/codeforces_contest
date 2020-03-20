@@ -21,22 +21,22 @@ public class B {
 			arr = new int[N];
 			for(int i = 0; i<N; i++)
 				arr[i] = Integer.parseInt(st.nextToken());
-			if(chkPalindrome(0, N-1, 0) >= 3) bw.write("YES\n");
+			boolean flag = false;
+			for(int i = 0; i<N; i++) {
+				for(int j = i+2; j<N; j++ ) {
+					if(arr[i] == arr[j]) {
+						flag = true;
+						break;
+					}
+				}
+				
+			}
+			if(flag) bw.write("YES\n");
 			else bw.write("NO\n");
 		}
 		bw.flush();
 		bw.close();
 		br.close();
 	}
-	
-	static int chkPalindrome(int left, int right, int cnt) {
-		if(left > right) return 0;
-		if(left == right) return 1;
-		if(arr[left] == arr[right])
-			cnt = chkPalindrome(left + 1, right - 1, cnt) + 2;
-		else {
-			cnt = Math.max(chkPalindrome(left + 1, right, cnt), chkPalindrome(left, right-1, cnt));
-		}
-		return cnt;
-	}
+
 }

@@ -3,26 +3,22 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.StringTokenizer;
 
 public class Main {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		int N = Integer.parseInt(br.readLine());
-		StringTokenizer st1 = new StringTokenizer(br.readLine());
-		StringTokenizer st2 = new StringTokenizer(br.readLine());
-		int arr[] = new int[N];
-		for(int i = 0; i<N; i++)
-			arr[i] = Integer.parseInt(st1.nextToken()) - Integer.parseInt(st2.nextToken());
-		int cnt = 0;
-		for(int i = 0; i<N-1; i++) {
-			for(int j = i+1; j<N; j++) {
-				if(arr[i] + arr[j] > 0) cnt++;
+		int testCase = Integer.parseInt(br.readLine());
+		for(int t = 0; t<testCase; t++) {
+			int n = Integer.parseInt(br.readLine());
+			if(n == 1) bw.write("-1\n");
+			else {
+				for(int i = 0; i<n-1; i++)
+					bw.write("5");
+				bw.write("4\n");
 			}
 		}
-		bw.write(cnt+"");
 		bw.flush();
 		bw.close();
 		br.close();
