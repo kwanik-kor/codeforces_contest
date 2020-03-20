@@ -31,7 +31,7 @@ public class C {
 			p[i] = Long.parseLong(st.nextToken());
 			if(p[i] > n-k) {
 				if(flag == 1) ans *= cur;
-				else 
+				else
 					flag = 1;
 				ans %= mod;
 				cur = 0;
