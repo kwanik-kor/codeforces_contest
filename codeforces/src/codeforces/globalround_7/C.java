@@ -32,7 +32,7 @@ public class C {
 			if(p[i] > n-k) {
 				if(flag == 1) ans *= cur;
 				else
-					flag = 1;
+					flag = 1; 
 				ans %= mod;
 				cur = 0;
 			}
