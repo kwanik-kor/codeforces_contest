@@ -22,3 +22,7 @@ __4. 20200319 23:35 codeforces globalround #7__
 - solved: A B
 - can't solve : C D
 * I set a goal on this round to solve at least 2 problems. I achieved the goal but still lack of skill. The next goal is 'Solve at least 3 problems'. Before that I should get over DP in 'Jongman Book'. Keep Going!
+
+__5. 20200324 23:35 codeforces educational round #84__
+- solved: A
+* Problem A was such an easy one. I had to be conscious about input range but I just tried to solve by combination. It was a big mistake and took over half n hour. Be conscious on problem A bixxh!! Remind and remind
