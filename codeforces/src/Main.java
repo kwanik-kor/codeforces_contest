@@ -6,29 +6,39 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class Main {
-	static int n, k;
-	static boolean flag;
-	static StringTokenizer st;
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int testCase = Integer.parseInt(br.readLine());
-		for(int t = 0; t<testCase; t++) {
-			st = new StringTokenizer(br.readLine());
-			n = Integer.parseInt(st.nextToken());
-			k = Integer.parseInt(st.nextToken());
-			flag = false;
-			if((long)k*k <= n) {
-				if((n%2 == 0 && k%2 == 0) || (n%2 == 1 && k%2 == 1))
-					flag = true;
+		while(testCase-- > 0) {
+			String str = br.readLine();
+			int n = str.length();
+			char arr[] = new char[n + 2];
+			for(int i = 1; i<=n; i++)
+				arr[i] = str.charAt(i-1);
+			arr[0] = arr[n+1] = 'R';
+			int ans = 1;
+			for(int i = 0; i<=n+1; i++) {
+				int c = 1;
+				if(arr[i] == 'R') 
+					continue;
+				while(i <= n+1) {
+					if(arr[i] != 'R') {
+						c++;
+					}else {
+						ans = Math.max(c, ans);
+						break;
+					}
+					i++;
+				}
 			}
-			bw.write(flag? "YES\n" : "NO\n");
+			bw.write(ans + "\n");
 		}
-		
 		bw.flush();
 		bw.close();
 		br.close();
 	}
+
 
 }
