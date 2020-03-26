@@ -26,3 +26,8 @@ __4. 20200319 23:35 codeforces globalround #7__
 __5. 20200324 23:35 codeforces educational round #84__
 - solved: A
 * Problem A was such an easy one. I had to be conscious about input range but I just tried to solve by combination. It was a big mistake and took over half n hour. Be conscious on problem A bixxh!! Remind and remind
+
+__6. 20200327 23:35 codeforces Round #629__
+- solved: A B C
+* Finally I achieved my goal! Solving three problems in a contest. cool but there were still a problem. B and C were also quite easy one but I didnt look for the condition and it made some mistake. This consumes quite a long time so I couldn't solve problem E! Keep Try and try Study harder! 
+* Next Goal: Solve three problems in Div2.
